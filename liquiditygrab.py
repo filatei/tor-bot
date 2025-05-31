@@ -171,7 +171,7 @@ def main():
                         f"• SL: `{setup['buy']['sl']}` | TP: `{setup['buy']['tp']}` | Lot: `{setup['buy']['lot_size']}`\n"
                         f"🕒 Time: `{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}`{DONATION_TEXT}"
                     )
-                    # send_telegram_message(message)
+                    send_telegram_message(message)
                     print(message, end='\n' * 2)
                     print(f"✅ Alert sent for {name}")
                 else:
