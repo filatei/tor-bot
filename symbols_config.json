@@ -1,0 +1,10 @@
+[
+    {"symbol": "EURUSD", "pip_precision": 0.0001},
+    {"symbol": "USDJPY", "pip_precision": 0.01},
+    {"symbol": "XAUUSD", "pip_precision": 0.1},
+    {"symbol": "BTCUSD", "pip_precision": 1.0},
+    { "symbol": "USOIL",  "pip_precision": 0.01 },
+    { "symbol": "NZDCAD",  "pip_precision": 0.0001 }
+
+  ]
+  
