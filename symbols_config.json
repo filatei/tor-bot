@@ -4,7 +4,83 @@
     "pip_precision": 0.0001
   },
   {
+    "symbol": "GBPUSD",
+    "pip_precision": 0.0001
+  },
+  {
     "symbol": "USDJPY",
+    "pip_precision": 0.01
+  },
+  {
+    "symbol": "USDCHF",
+    "pip_precision": 0.0001
+  },
+  {
+    "symbol": "AUDUSD",
+    "pip_precision": 0.0001
+  },
+  {
+    "symbol": "NZDUSD",
+    "pip_precision": 0.0001
+  },
+  {
+    "symbol": "USDCAD",
+    "pip_precision": 0.0001
+  },
+  {
+    "symbol": "EURJPY",
+    "pip_precision": 0.01
+  },
+  {
+    "symbol": "GBPJPY",
+    "pip_precision": 0.01
+  },
+  {
+    "symbol": "EURGBP",
+    "pip_precision": 0.0001
+  },
+  {
+    "symbol": "AUDJPY",
+    "pip_precision": 0.01
+  },
+  {
+    "symbol": "NZDCAD",
+    "pip_precision": 0.0001
+  },
+  {
+    "symbol": "BTCUSD",
+    "pip_precision": 1.0
+  },
+  {
+    "symbol": "ETHUSD",
+    "pip_precision": 0.1
+  },
+  {
+    "symbol": "BNBUSD",
+    "pip_precision": 0.01
+  },
+  {
+    "symbol": "XRPUSD",
+    "pip_precision": 0.0001
+  },
+  {
+    "symbol": "SOLUSD",
+    "pip_precision": 0.01
+  },
+  {
+    "symbol": "ADAUSD",
+    "pip_precision": 0.0001
+  },
+  {
+    "symbol": "DOGEUSD",
+    "pip_precision": 1e-05
+  },
+  {
+    "symbol": "DOTUSD",
+    "pip_precision": 0.001
+  },
+  {
+    "symbol": "AVAXUSD",
     "pip_precision": 0.01
   },
   {
@@ -12,15 +88,23 @@
     "pip_precision": 0.1
   },
   {
-    "symbol": "BTCUSD",
-    "pip_precision": 1.0
+    "symbol": "XAGUSD",
+    "pip_precision": 0.01
   },
   {
     "symbol": "USOIL",
     "pip_precision": 0.01
   },
   {
-    "symbol": "NZDCAD",
+    "symbol": "NGAS",
+    "pip_precision": 0.001
+  },
+  {
+    "symbol": "BRENT",
+    "pip_precision": 0.01
+  },
+  {
+    "symbol": "COPPER",
     "pip_precision": 0.0001
   }
 ]
