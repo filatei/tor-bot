@@ -1,3 +1,4 @@
+# main.py
 
 import streamlit as st
 from app.dashboard import dashboard_tab
