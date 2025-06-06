@@ -17,7 +17,7 @@ def normalize_symbol(symbol: str) -> str:
     return symbol
 
 def profit_calculator_tab():
-    st.title("📊 Profit Calculator")
+    st.info("📊 Profit Calculator")
 
     default_symbols = [
         "EURUSD=X", "GBPUSD=X", "USDJPY=X", "USDCHF=X", "USDCAD=X", "AUDUSD=X", "NZDUSD=X",
@@ -54,12 +54,12 @@ def profit_calculator_tab():
         lot_size = st.number_input("📦 Trade Size (Lots)", value=0.01, min_value=0.001, step=0.001)
         open_price = st.number_input("📥 Open Price", value=st.session_state.open_price, key="open_price_input")
         close_price = st.number_input("📤 Close Price", value=st.session_state.close_price, key="close_price_input")
-        direction = st.radio("🧭 Trade Direction", ["Buy", "Sell"], horizontal=True)
+        direction = st.radio("🧭 Trade Direction", ["Buy", "Sell"], horizontal=True, label_visibility="collapsed")
 
     with col2:
         # Leverage & Calculate
-        leverage = st.number_input("⚖️ Leverage (e.g., 100 = 1:100)", value=100, min_value=1)
-        calculate_margin = st.checkbox("🔓 Show Margin Requirement", value=True)
+        # leverage = st.number_input("⚖️ Leverage (e.g., 100 = 1:100)", value=100, min_value=1)
+        # calculate_margin = st.checkbox("🔓 Show Margin Requirement", value=True)
 
         if st.button("💰 Calculate"):
             units = lot_size * 100000 if "USD" in normalized_symbol and "BTC" not in normalized_symbol else lot_size
@@ -69,17 +69,17 @@ def profit_calculator_tab():
             st.session_state["last_result"] = result
             st.session_state["last_pct"] = pct
 
-            if calculate_margin:
-                notional = open_price * lot_size * 100000
-                margin = round(notional / leverage, 2)
-                st.session_state["last_margin"] = margin
-            else:
-                st.session_state.pop("last_margin", None)
+            # if calculate_margin:
+            #     notional = open_price * lot_size * 100000
+            #     margin = round(notional / leverage, 2)
+            #     st.session_state["last_margin"] = margin
+            # else:
+            #     st.session_state.pop("last_margin", None)
 
         # Result Display
         result = st.session_state.get("last_result")
         pct = st.session_state.get("last_pct")
-        margin = st.session_state.get("last_margin")
+        # margin = st.session_state.get("last_margin")
 
         st.markdown("### 📈 Result")
         if result is not None:
@@ -90,5 +90,5 @@ def profit_calculator_tab():
             else:
                 st.markdown(f"**⚖️ No P/L:** ${result:.2f}")
 
-        if margin is not None:
-            st.info(f"📌 Required Margin: ${margin}")
+        # if margin is not None:
+        #     st.info(f"📌 Required Margin: ${margin}")

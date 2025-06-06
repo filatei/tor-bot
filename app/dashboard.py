@@ -33,6 +33,7 @@ def fetch_price(yf_symbol):
     return None
 
 
+
 # === Main Dashboard ===
 def dashboard_tab():
     st.title("📈 Trade Dashboard")
