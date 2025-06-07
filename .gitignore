@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 .env
 .env*
 google-credentials.json
+=======
+./google_sheet_config.json
+.env
+__pycache__/
+*.pyc
+google-credentials.json
+.env
+__pycache__/
+*.pyc
+>>>>>>> dfc32c83b2c664d8625dfba6d0a6e8c0882e4da2
